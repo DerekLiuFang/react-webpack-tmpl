@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development BASE_ENV=development webpack-dev-server -c config/webpack.dev.js",
     "start": "npm run dev",
-    "build": "cross-env NODE_ENV=production BASE_ENV=production webpack -c config/webpack.prod.js"
+    "build": "cross-env NODE_ENV=production BASE_ENV=production webpack -c config/webpack.prod.js",
+    "build:analyze": "cross-env NODE_ENV=production BASE_ENV=production webpack -c config/webpack.analyze.js"
   },
   "author": "",
   "license": "ISC",
@@ -42,9 +43,12 @@
     "postcss-loader": "^7.3.3",
     "purgecss-webpack-plugin": "^5.0.0",
     "react-refresh": "^0.14.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
     "style-loader": "^3.3.3",
     "terser-webpack-plugin": "^5.3.9",
+    "thread-loader": "^4.0.2",
     "webpack": "^5.88.2",
+    "webpack-bundle-analyzer": "^4.9.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"

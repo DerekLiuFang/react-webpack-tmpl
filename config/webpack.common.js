@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        use: "babel-loader",
+        use: ["thread-loader", "babel-loader"],
         include: [path.resolve(__dirname, "../src")],
       },
       {
